@@ -45,9 +45,7 @@ body {
     @include vendor("flex-grow", "1");
     @include vendor("flex-shrink", "1");
     border: 0;
-    font-family: _font(logo);
-    font-size: 0.9rem;
-    text-transform: lowercase;
+    font-size: 1.25rem;
     white-space: nowrap;
   }
 

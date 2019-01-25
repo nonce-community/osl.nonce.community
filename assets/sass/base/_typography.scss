@@ -217,7 +217,7 @@ header {
     }
 
     p {
-      font-size: 1.25rem;
+      font-size: 1.5em;
       margin: 0 0 6rem 0;
     }
 
@@ -344,6 +344,20 @@ header {
       }
     }
   }
+}
+
+.nonce {
+  font-size: 70%;
+  font-family: _font(nonce);
+  text-transform: lowercase !important;
+}
+
+.emphasize {
+  font-size: 150%;
+}
+
+.super-emphasize {
+  font-size: 200%;
 }
 
 @include color-typography;
