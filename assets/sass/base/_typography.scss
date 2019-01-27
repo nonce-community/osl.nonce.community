@@ -101,11 +101,15 @@ h4 {
 }
 
 h5 {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 h6 {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 @include breakpoint("<=large") {
@@ -350,6 +354,10 @@ header {
   font-size: 70%;
   font-family: _font(nonce);
   text-transform: lowercase !important;
+}
+
+.calm {
+  font-family: _font(calm);
 }
 
 .emphasize {
