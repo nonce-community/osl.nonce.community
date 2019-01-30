@@ -12,7 +12,7 @@
   section {
     @include vendor("align-items", "center");
     @include vendor("display", "flex");
-    //margin-top: -3rem;
+    margin-bottom: 3rem;
 
     .image {
       @include vendor("flex-grow", "0");
@@ -50,7 +50,7 @@
 
     &:nth-child(2n) {
       @include vendor("flex-direction", "row-reverse");
-      text-align: left;
+      text-align: right;
 
       .image {
         margin: 0 0 0 6rem;

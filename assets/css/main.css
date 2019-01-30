@@ -388,6 +388,9 @@ header.special {
 .super-emphasize {
   font-size: 200%; }
 
+.left {
+  text-align: left; }
+
 input,
 select,
 textarea {
@@ -2033,7 +2036,8 @@ table.alt tbody tr td {
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
-    display: flex; }
+    display: flex;
+    margin-bottom: 3rem; }
     .spotlights section .image {
       -moz-flex-grow: 0;
       -webkit-flex-grow: 0;
@@ -2069,7 +2073,7 @@ table.alt tbody tr td {
       -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
       flex-direction: row-reverse;
-      text-align: left; }
+      text-align: right; }
       .spotlights section:nth-child(2n) .image {
         margin: 0 0 0 6rem; }
       .spotlights section:nth-child(2n) .content header.major h3:after {
