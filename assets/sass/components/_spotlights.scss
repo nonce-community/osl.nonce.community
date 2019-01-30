@@ -6,146 +6,146 @@
 
 /* Spotlights */
 
-	.spotlights {
-		margin: 0 0 _size(element-margin) 0;
+.spotlights {
+  margin: 0 0 _size(element-margin) 0;
 
-		section {
-			@include vendor('align-items', 'center');
-			@include vendor('display', 'flex');
-			margin-top: -3rem;
+  section {
+    @include vendor("align-items", "center");
+    @include vendor("display", "flex");
+    //margin-top: -3rem;
 
-			.image {
-				@include vendor('flex-grow', '0');
-				@include vendor('flex-shrink', '0');
-				border-radius: 100%;
-				box-shadow: 0 1rem 3rem 0 rgba(0,0,0,0.25);
-				margin: 0 6rem 0 0;
-				width: 30rem;
+    .image {
+      @include vendor("flex-grow", "0");
+      @include vendor("flex-shrink", "0");
+      border-radius: 100%;
+      box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.25);
+      margin: 0 6rem 0 0;
+      width: 30rem;
 
-				img {
-					border-radius: 100%;
-					display: block;
-					width: 100%;
-				}
-			}
+      img {
+        border-radius: 100%;
+        display: block;
+        width: 100%;
+      }
+    }
 
-			.content {
-				@include vendor('flex-grow', '1');
-				@include vendor('flex-shrink', '1');
+    .content {
+      @include vendor("flex-grow", "1");
+      @include vendor("flex-shrink", "1");
 
-				header {
-					&.major {
-						h3 {
-							&:after {
-								margin-right: auto;
-							}
-						}
-					}
-				}
-			}
+      header {
+        &.major {
+          h3 {
+            &:after {
+              margin-right: auto;
+            }
+          }
+        }
+      }
+    }
 
-			&:first-child {
-				margin-top: 0;
-			}
+    &:first-child {
+      margin-top: 0;
+    }
 
-			&:nth-child(2n) {
-				@include vendor('flex-direction', 'row-reverse');
-				text-align: right;
+    &:nth-child(2n) {
+      @include vendor("flex-direction", "row-reverse");
+      text-align: left;
 
-				.image {
-					margin: 0 0 0 6rem;
-				}
+      .image {
+        margin: 0 0 0 6rem;
+      }
 
-				.content {
-					header {
-						&.major {
-							h3 {
-								&:after {
-									margin-left: auto;
-									margin-right: 0;
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+      .content {
+        header {
+          &.major {
+            h3 {
+              &:after {
+                margin-left: 0;
+                margin-right: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
-		@include breakpoint('<=large') {
-			section {
-				margin-top: 3rem;
+  @include breakpoint("<=large") {
+    section {
+      margin-top: 3rem;
 
-				.image {
-					margin: 0 4rem 0 0;
-					width: 20rem;
-				}
+      .image {
+        margin: 0 4rem 0 0;
+        width: 20rem;
+      }
 
-				&:nth-child(2n) {
-					.image {
-						margin: 0 0 0 4rem;
-					}
-				}
-			}
-		}
+      &:nth-child(2n) {
+        .image {
+          margin: 0 0 0 4rem;
+        }
+      }
+    }
+  }
 
-		@include breakpoint('<=medium') {
-			section {
-				display: block;
-				text-align: center;
+  @include breakpoint("<=medium") {
+    section {
+      display: block;
+      text-align: center;
 
-				.image {
-					margin: 0 0 3rem 0;
-					max-width: 100%;
-				}
+      .image {
+        margin: 0 0 3rem 0;
+        max-width: 100%;
+      }
 
-				.content {
-					header {
-						&.major {
-							h3 {
-								&:after {
-									margin-left: auto;
-									margin-right: auto;
-								}
-							}
-						}
-					}
-				}
+      .content {
+        header {
+          &.major {
+            h3 {
+              &:after {
+                margin-left: auto;
+                margin-right: auto;
+              }
+            }
+          }
+        }
+      }
 
-				&:nth-child(2n) {
-					text-align: center;
+      &:nth-child(2n) {
+        text-align: center;
 
-					.image {
-						margin: 0 0 3rem 0;
-					}
+        .image {
+          margin: 0 0 3rem 0;
+        }
 
-					.content {
-						header {
-							&.major {
-								h3 {
-									&:after {
-										margin-left: auto;
-										margin-right: auto;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
+        .content {
+          header {
+            &.major {
+              h3 {
+                &:after {
+                  margin-left: auto;
+                  margin-right: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
-		@include breakpoint('<=small') {
-			section {
-				.image {
-					width: 15rem;
-					margin: 0 0 2rem 0;
-				}
+  @include breakpoint("<=small") {
+    section {
+      .image {
+        width: 15rem;
+        margin: 0 0 2rem 0;
+      }
 
-				&:nth-child(2n) {
-					.image {
-						margin: 0 0 2rem 0;
-					}
-				}
-			}
-		}
-	}
+      &:nth-child(2n) {
+        .image {
+          margin: 0 0 2rem 0;
+        }
+      }
+    }
+  }
+}
