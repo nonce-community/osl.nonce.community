@@ -65,6 +65,11 @@ i {
 
 p {
   margin: 0 0 _size(element-margin) 0;
+  font-family: _font(sourcesans);
+}
+
+dl {
+  font-family: _font(sourcesans);
 }
 
 h1,
@@ -73,10 +78,10 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: _font(nonce);
   font-weight: _font(weight);
   line-height: 1.5;
   margin: 0 0 (_size(element-margin) * 0.75) 0;
-  text-transform: uppercase;
 
   a {
     color: inherit;
@@ -351,13 +356,25 @@ header {
 }
 
 .nonce {
-  font-size: 70%;
   font-family: _font(nonce);
   text-transform: lowercase !important;
 }
 
-.calm {
-  font-family: _font(calm);
+.bitter {
+  font-family: _font(nonce);
+}
+
+.serif {
+  font-family: _font(notoserif);
+}
+
+.sans {
+  font-family: _font(sourcesans);
+  font-weight: 200 !important;
+}
+
+.kor {
+  font-family: _font(kor);
 }
 
 .emphasize {
@@ -368,8 +385,16 @@ header {
   font-size: 200%;
 }
 
+.depreciate{
+  font-size: 70%;
+}
+
 .left {
   text-align: left;
+}
+
+.lowercase {
+  text-transform: lowercase !important;
 }
 
 @include color-typography;

@@ -33,6 +33,8 @@
   visibility: hidden;
   width: 20rem;
   z-index: _misc(z-index-base) + 2;
+  font-family: _font(nonce);
+  font-weight: 400;
 
   nav {
     padding: 3rem 2rem;

@@ -98,7 +98,6 @@ body {
     padding: 0 1.5rem;
     position: absolute;
     right: 0;
-    text-transform: uppercase;
     top: 0;
 
     &:before {
@@ -182,9 +181,8 @@ body {
         border-radius: 2rem;
         border: 0;
         box-shadow: 0;
-        font-size: 1.5rem;
+        font-size: 1.0rem;
         padding: 0.625rem 1.5rem;
-        text-transform: uppercase;
         box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0);
 
         &.icon {

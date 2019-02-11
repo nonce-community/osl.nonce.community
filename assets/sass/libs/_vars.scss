@@ -24,17 +24,21 @@ $size: (
 // Font.
 $font: (
   family: (
-    "East Sea Dokdo",
-    Helvetica,
-    sans-serif
+    "Noto Serif KR",
+    serif
   ),
   nonce: (
     "Bitter",
     serif
   ),
-  calm: (
+  notoserif: (
     "Noto Serif KR",
     serif
+  ),
+  sourcesans: (
+    "Source Sans Pro",
+    Helvetica,
+    sans-serif
   ),
   logo: (
     "Bitter",
